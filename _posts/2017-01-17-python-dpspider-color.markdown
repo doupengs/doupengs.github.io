@@ -25,18 +25,21 @@ tags:
  * textColor 前景色，就是字体的颜色
  * backgroundColor 背景色
  * style 字的样式
+ 
  ```
     颜色有:red, yellow, green, blue, cyan, purple, black, white
     样式有:bold, underline
  ```
+ 
  * logFile 将打印信息写入的文件名称，默认是打印不写入
  * color 是否带有颜色打印，默认为True,False就和print输出一样
  * debug 调试的等级，分为5个等级，0，1，2，3，4，默认为4，就是什么都会打印
+ 
  ```
-    0 什么都不打印<br>
-    1 只打印以[Error]为开头的信息<br>
-    2 打印以[Error],[WARING]开头的信息<br>
-    3 打印以[Error],[WARING],[INFO]开头的信息<br>
+    0 什么都不打印
+    1 只打印以[Error]为开头的信息
+    2 打印以[Error],[WARING]开头的信息
+    3 打印以[Error],[WARING],[INFO]开头的信息
     4 什么都打印
  ```
  
@@ -58,15 +61,15 @@ printText('[Error]:这是一条错误',color=False,logFile='test.log')
 
 * 下面是输出结果
 
-<img src="https://raw.githubusercontent.com/doupengs/doupengs.github.io/master/img/python-dpspider-color.PNG"/><br>
+<img src="https://raw.githubusercontent.com/doupengs/doupengs.github.io/master/img/python-dpspider-color.PNG"/>
 <img src="https://raw.githubusercontent.com/doupengs/doupengs.github.io/master/img/python-dpspider-color1.PNG"/>
 
  ```
- 这里[INFO]默认为 cyan 青蓝色，[WARING]默认为 yellow 黄色，[Error]默认为 red 红色。背景色均为无，样式为 bold 高量加粗
+ 这里[INFO]默认为 cyan 青蓝色，[WARING]默认为 yellow 黄色，[Error]默认为 red 红色。
+     背景色均为无，样式为 bold 高量加粗
  当写入文件是会带有时间，当然你也可以根据自己的需求来修改源代码
  打印颜色一般适用于linux的终端，pyCharm,win的终端
  ```
- <br>
  
  点击这里查看 [color.py](https://github.com/doupengs/dpspider/blob/master/dpspider/color.py) 源码
  
