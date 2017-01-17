@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "dpspider框架介绍(一)<br>color模块介绍"
-subtitle:   ""
+title:      "dpspider框架介绍(一)"
+subtitle:   "color模块介绍"
 date:       2017-01-17 10:00:00
 author:     "Doupeng"
 header-img: "img/post-bg-python-dpspider-color.jpg"
@@ -43,6 +43,8 @@ tags:
     4 什么都打印
  ```
  
+* 代码示例
+ 
  ```python
 #coding:utf-8
 
@@ -61,8 +63,8 @@ printText('[Error]:这是一条错误',color=False,logFile='test.log')
 
 * 下面是输出结果
 
-<img src="https://raw.githubusercontent.com/doupengs/doupengs.github.io/master/img/python-dpspider-color.PNG"/>
-<img src="https://raw.githubusercontent.com/doupengs/doupengs.github.io/master/img/python-dpspider-color1.PNG"/>
+![img](/img/python-dpspider-color.PNG)
+![img](/img/python-dpspider-color1.PNG)
 
  ```
  这里[INFO]默认为 cyan 青蓝色，[WARING]默认为 yellow 黄色，[Error]默认为 red 红色。
