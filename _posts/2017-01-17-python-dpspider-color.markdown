@@ -43,7 +43,7 @@ tags:
 
 from dpspider.color import printText
 
-printText('我是一条测试信息'，'red','yellow')
+printText('我是一条测试信息','red','yellow')
 printText(None,'blue',style='bold')
 printText('哈哈哈哈哈','blue',style='underline')
 printText('[INFO]:这是一条信息')
