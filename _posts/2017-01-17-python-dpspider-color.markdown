@@ -21,6 +21,7 @@ tags:
 ## 参数介绍
 
 先来看一下printText下的参数:
+
 * obj 需要打印的对象，比如是字符串，None对象，等等...
 * textColor 前景色，就是字体的颜色
 * backgroundColor 背景色
@@ -58,6 +59,8 @@ printText('[Error]:这是一条错误',color=False,logFile='test.log')
 
 ![img](/img/python-dpspider-color.PNG)
 ![img](/img/python-dpspider-color1.PNG)
+
+## 注意
 
  ```
  这里[INFO]默认为cyan青蓝色，[WARING]默认为yellow黄色，[Error]默认为red红色。
