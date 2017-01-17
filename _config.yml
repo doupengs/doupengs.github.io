@@ -1,20 +1,20 @@
 # Site settings
-title: Orchid Blog
-SEOTitle: Orchid Blog
+title: 窦朋的博客
+SEOTitle: 窦朋的博客
 header-img: img/home-bg_meitu_1.jpg
-email: zyddora@gmail.com
-description: " 这里是 @Orchid张也冬的个人博客。"
+email: doupeng1993@sina.com
+description: " 这里是 @窦朋的个人博客。"
 keyword: "Orchid, Orchid Blog, 博客, 个人网站, 互联网, 人工智能, 机器学习, 自然语言处理"
-url: "http://zyddora.github.io"              # your host, for absolute URL
+url: "http://doupengs.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
 # SNS settings
 RSS: false
-weibo_username:     u/1058773570
-facebook_username:  zyddora 
-github_username:    zyddora 
+#weibo_username:     u/1058773570
+#facebook_username:  zyddora 
+#github_username:    zyddora 
 #twitter_username:  huxpro
 
 
