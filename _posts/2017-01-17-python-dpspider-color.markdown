@@ -20,23 +20,24 @@ tags:
 
 ## 参数介绍
 
+```
 先来看一下printText下的参数:
+  1 obj 需要打印的对象，比如是字符串，None对象，等等...
+  2 textColor 前景色，就是字体的颜色
+  3 backgroundColor 背景色 
+  4 style 字的样式
+     颜色有:red, yellow, green, blue, cyan, purple, black, white<br>
+     样式有:bold, underline
+  5 logFile 将打印信息写入的文件名称，默认是打印不写入
+  6 color 是否带有颜色打印，默认为True,False就和print输出一样
+  7 debug 调试的等级，分为5个等级，0，1，2，3，4，默认为4，就是什么都会打印
+     0 什么都不打印
+     1 只打印以[Error]为开头的信息
+     2 打印以[Error],[WARING]开头的信息
+     3 打印以[Error],[WARING],[INFO]开头的信息
+     4 什么都打印
+```
 
-* obj 需要打印的对象，比如是字符串，None对象，等等...
-* textColor 前景色，就是字体的颜色
-* backgroundColor 背景色
- * style 字的样式
- * 颜色有:red, yellow, green, blue, cyan, purple, black, white
- * 样式有:bold, underline
-* logFile 将打印信息写入的文件名称，默认是打印不写入
-* color 是否带有颜色打印，默认为True,False就和print输出一样
-* debug 调试的等级，分为5个等级，0，1，2，3，4，默认为4，就是什么都会打印
- * 0 什么都不打印
- * 1 只打印以[Error]为开头的信息
- * 2 打印以[Error],[WARING]开头的信息
- * 3 打印以[Error],[WARING],[INFO]开头的信息
- * 4 什么都打印
- 
 ## 代码示例
 
 ```python
