@@ -39,6 +39,7 @@ tags:
     3 打印以[Error],[WARING],[INFO]开头的信息<br>
     4 什么都打印
  ```
+ 
  ```python
 #coding:utf-8
 
@@ -54,15 +55,19 @@ printText('[INFO]:这是一条信息',color=False,logFile='test.log')
 printText('[WARING]:这是一条警告',color=False,logFile='test.log')
 printText('[Error]:这是一条错误',color=False,logFile='test.log')
 ```
+
 * 下面是输出结果
-![](https://github.com/doupengs/doupengs.github.io/blob/master/img/python-dpspider-color.PNG)<br>
-![](https://github.com/doupengs/doupengs.github.io/blob/master/img/python-dpspider-color1.PNG)
+
+<img src="https://github.com/doupengs/doupengs.github.io/blob/master/img/python-dpspider-color.PNG"/><br>
+<img src="https://github.com/doupengs/doupengs.github.io/blob/master/img/python-dpspider-color1.PNG"/>
+
  ```
  这里[INFO]默认为 cyan 青蓝色，[WARING]默认为 yellow 黄色，[Error]默认为 red 红色。背景色均为无，样式为 bold 高量加粗
  当写入文件是会带有时间，当然你也可以根据自己的需求来修改源代码
  打印颜色一般适用于linux的终端，pyCharm,win的终端
  ```
  <br>
+ 
  点击这里查看 [color.py](https://github.com/doupengs/dpspider/blob/master/dpspider/color.py) 源码
  
  color.py 就介绍到这里了，有什么好的建议可以留言讨论
