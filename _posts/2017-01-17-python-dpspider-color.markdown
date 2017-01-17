@@ -62,14 +62,11 @@ printText('[Error]:这是一条错误',color=False,logFile='test.log')
 
 ## 注意
 
- ```
- 这里[INFO]默认为cyan青蓝色，[WARING]默认为yellow黄色，[Error]默认为red红色。
-     背景色均为无，样式为bold高亮加粗
- 当写入文件是会带有写入时间
- 当然你也可以根据自己的需求来修改源代码
- 打印颜色一般适用于linux的终端，pyCharm,win的终端
- ```
+这里[INFO]默认为cyan青蓝色，[WARING]默认为yellow黄色，[Error]默认为red红色。背景色均为无，样式为bold高亮加粗<br>
+当写入文件时会带有写入时间<br>
+当然你也可以根据自己的需求来修改源代码<br>
+打印颜色一般适用于linux的终端，pyCharm,win的终端<br>
  
- 点击这里查看 [color.py](https://github.com/doupengs/dpspider/blob/master/dpspider/color.py) 源码
- 
- color.py 就介绍到这里了，有什么好的建议可以留言讨论
+点击这里查看 [color.py](https://github.com/doupengs/dpspider/blob/master/dpspider/color.py) 源码
+
+color.py 就介绍到这里了，有什么好的建议可以留言讨论
