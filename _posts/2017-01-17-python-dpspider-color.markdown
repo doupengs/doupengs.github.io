@@ -58,8 +58,8 @@ printText('[Error]:这是一条错误',color=False,logFile='test.log')
 
 * 下面是输出结果
 
-<img src="https://github.com/doupengs/doupengs.github.io/blob/master/img/python-dpspider-color.PNG"/><br>
-<img src="https://github.com/doupengs/doupengs.github.io/blob/master/img/python-dpspider-color1.PNG"/>
+<img src="https://raw.githubusercontent.com/doupengs/doupengs.github.io/master/img/python-dpspider-color.PNG"/><br>
+<img src="https://raw.githubusercontent.com/doupengs/doupengs.github.io/master/img/python-dpspider-color1.PNG"/>
 
  ```
  这里[INFO]默认为 cyan 青蓝色，[WARING]默认为 yellow 黄色，[Error]默认为 red 红色。背景色均为无，样式为 bold 高量加粗
