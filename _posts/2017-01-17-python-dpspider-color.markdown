@@ -13,6 +13,25 @@ tags:
 
 > 本文是dpspider框架介绍的第一篇，从最基础和最容易理解的模块慢慢讲解，dpspider是我自己写的一个第三方模块，可能存在很多不足的地方，好的地方可以学习，不足之处还请谅解
 
+```cpp
+const int N = 1024;
+const int K = 32;
+
+__global__ void transpose_parallel_per_element_tiled(float in[], float out[])
+{
+  int in_corner_i = blockIdx.x * K, in_corner_j = blockIdx.y * K;
+  int out_corner_i = blockIdx.y * K, out_corner_j = blockIdx.x * K;
+
+  int x = threadIdx.x, y = threadIdx.y;
+
+  __shared__ float tile[K][K];
+
+  tile[y][x] = in[(in_corner_i + x) + (in_corner_j + y) * N];
+  __syncthreads();
+  out[(out_corner_i + x) + (out_corner_j + y) * N] = title[x][y];
+}
+```
+
 ## 下载安装
 
 先点击查看github项目地址[dpspider](https://github.com/doupengs/dpspider/blob/master/README.md)来下载安装所需要的依赖库和数据库,当然现在了解color.py并不需要数据库
