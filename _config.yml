@@ -4,7 +4,7 @@ SEOTitle: 窦朋的博客 | Doupeng Blog
 header-img: img/home-bg_meitu_1.jpg
 email: doupeng1993@sina.com
 description: " 这里是 @窦朋的个人博客。"
-keyword: "Orchid, Orchid Blog, 博客, 个人网站, 互联网, 人工智能, 机器学习, 自然语言处理"
+keyword: "Doupeng, Doupeng Blog, 博客, 个人网站, 互联网, Python, 爬虫"
 url: "http://doupengs.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
@@ -42,9 +42,9 @@ kramdown:
 #disqus_username: _your_disqus_short_name_
 
 # Duoshuo settings
-duoshuo_username: orchid 
+#duoshuo_username: orchid 
 # Share component is depend on Comment so we can NOT use share only.
-duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+#duoshuo_share: true                     # set to false if you want to use Comment without Sharing
 
 
 
@@ -60,7 +60,7 @@ duoshuo_share: true                     # set to false if you want to use Commen
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "我喜欢抽象，但我更爱真实的生活"
+sidebar-about-description: "我喜欢抽象的事物</br>但我热爱真实的生活..."
 sidebar-avatar: /img/avatar-orchid.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
