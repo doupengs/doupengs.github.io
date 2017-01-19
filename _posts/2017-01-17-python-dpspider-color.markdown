@@ -2,8 +2,8 @@
 layout:     post
 title:      "dpspider框架介绍(一)"
 subtitle:   "color模块介绍"
-date:       2017-01-17 10:00:00
-author:     "Doupeng"
+date:       2017-01-17
+author:     "窦朋"
 header-img: "img/post-bg-python-dpspider-color.jpg"
 tags:
     - python
@@ -26,7 +26,7 @@ tags:
   2 textColor 前景色，就是字体的颜色
   3 backgroundColor 背景色 
   4 style 字的样式
-     颜色有:red, yellow, green, blue, cyan, purple, black, white<br>
+     颜色有:red, yellow, green, blue, cyan, purple, black, white
      样式有:bold, underline
   5 logFile 将打印信息写入的文件名称，默认是打印不写入
   6 color 是否带有颜色打印，默认为True,False就和print输出一样
@@ -63,11 +63,14 @@ printText('[Error]:这是一条错误',color=False,logFile='test.log')
 
 ## 注意
 
+```
 这里[INFO]默认为cyan青蓝色，[WARING]默认为yellow黄色，[Error]默认为red红色。背景色均为无，样式为bold高亮加粗<br>
 当写入文件时会带有写入时间<br>
 当然你也可以根据自己的需求来修改源代码<br>
 打印颜色一般适用于linux的终端，pyCharm,win的终端<br>
+```
  
-点击这里查看 [color.py](https://github.com/doupengs/dpspider/blob/master/dpspider/color.py) 源码
+ 
+- 点击这里查看 [color.py](https://github.com/doupengs/dpspider/blob/master/dpspider/color.py) 源码
 
-color.py 就介绍到这里了，有什么好的建议可以留言讨论
+- color.py 就介绍到这里了，有什么好的建议可以留言讨论
