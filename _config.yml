@@ -1,17 +1,17 @@
 # Site settings
-title: Doupeng Blog
-SEOTitle: 窦朋的博客 | Doupeng Blog
+title: 猿来如此
+SEOTitle: 猿来如此|python资讯
 header-img: img/home-bg_meitu_1.jpg
 email: doupeng1993@sina.com
-description: " 这里是窦朋的博客。"
-keyword: "Doupeng, Doupeng Blog, 博客, 个人网站, 互联网, Python, 爬虫"
+description: "猿来如此，分享python资讯，个人学习经验"
+keyword: "，猿来如此, Python, 爬虫, 个人网站, 互联网, 资讯"
 url: "http://doupengs.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
 # SNS settings
-RSS: false
+RSS: true
 weibo_username:     u/3803122676
 facebook_username:  pycodeboy
 github_username:    doupengs
