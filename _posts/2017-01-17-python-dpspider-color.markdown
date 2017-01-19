@@ -3,7 +3,7 @@ layout:     post
 title:      "dpspider框架介绍(一)"
 subtitle:   "color模块介绍"
 date:       2017-01-17
-author:     "窦朋"
+author:     "Doupeng"
 header-img: "img/post-bg-python-dpspider-color.jpg"
 tags:
     - python
