@@ -79,7 +79,7 @@ from dpspider.download import Download
 
 DL = Download(max=2,proxyFilePath='proxy.txt',logFile=None,color=True,debug=4)
 url = 'http://www.tmtpost.com/new/1'
-for i in range(6):
+for i in range(5):
     response = DL.download('GET',url,proxyEnable=True)
     printText(response,'green')
 ```
@@ -97,8 +97,6 @@ for i in range(6):
 <p style="color:green"><Response [200]></p>
 <p style="color:cyan">[INFO]change proxy:122.72.32.73:80</p>
 <p style="color:cyan">[INFO]change proxy:124.88.67.17:82</p>
-<p style="color:green"><Response [200]></p>
-<p style="color:cyan">[INFO]use proxy:124.88.67.17:82</p>
 <p style="color:green"><Response [200]></p>
 </div>
 
