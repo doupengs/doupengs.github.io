@@ -66,7 +66,7 @@ printText(response,'cyan')
 
 ## 输出结果1
 
-<div style="background-color:#777">
+<div style="background-color:rgb(39,40,34)">
 <p style="color:red">[Error]download.py Download \_\_init\_\_:[Errno 2] No such file or directory: 'proxy.txt'</p>
 <p style="color:cyan"><Response [200]></p>
 </div>
@@ -86,7 +86,7 @@ for i in range(6):
 
 ## 输出结果2
 
-<div style="background-color:#777">
+<div style="background-color:rgb(39,40,34)">
 <p style="color:cyan">[INFO]use proxy:101.231.46.34:8000</p>
 <p style="color:green"><Response [200]></p>
 <p style="color:cyan">[INFO]use proxy:101.231.46.34:8000</p>
