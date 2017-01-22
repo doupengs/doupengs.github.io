@@ -66,9 +66,10 @@ printText(response,'cyan')
 
 ## 输出结果1
 
+<div style="background-color:#000">
 <p style="color:red">[Error]download.py Download \_\_init\_\_:[Errno 2] No such file or directory: 'proxy.txt'</p>
-<p style="color:cyan">\<Response [200]\></p>
-
+<p style="color:cyan"><Response [200]></p>
+</div>
 
 ## 代码示例2
 
@@ -85,21 +86,21 @@ for i in range(6):
 
 ## 输出结果2
 
-
+<div style="background-color:#000">
 <p style="color:cyan">[INFO]use proxy:101.231.46.34:8000</p>
-<p style="color:green">\<Response [200]\></p>
+<p style="color:green"><Response [200]></p>
 <p style="color:cyan">[INFO]use proxy:101.231.46.34:8000</p>
-<p style="color:green">\<Response [200]\></p>
+<p style="color:green"><Response [200]></p>
 <p style="color:cyan">[INFO]change proxy:124.88.67.52:843</p>
-<p style="color:green">\<Response [200]\></p>
+<p style="color:green"><Response [200]></p>
 <p style="color:cyan">[INFO]use proxy:124.88.67.52:843</p>
-<p style="color:green">\<Response [200]\></p>
+<p style="color:green"><Response [200]></p>
 <p style="color:cyan">[INFO]change proxy:122.72.32.73:80</p>
 <p style="color:cyan">[INFO]change proxy:124.88.67.17:82</p>
-<p style="color:green">\<Response [200]\></p>
+<p style="color:green"><Response [200]></p>
 <p style="color:cyan">[INFO]use proxy:124.88.67.17:82</p>
-<p style="color:green">\<Response [200]\></p>
-
+<p style="color:green"><Response [200]></p>
+</div>
 
 ## 代理文件(这里注意必须是这种格式)
 
