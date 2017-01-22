@@ -66,8 +66,8 @@ printText(response,'cyan')
 
 ## 输出结果1
 
-<span style="color:red">[Error]download.py Download \_\_init\_\_:[Errno 2] No such file or directory: 'proxy.txt'</span></br>
-<span style="color:cyan">\<Response [200]\></span>
+<span style="color:red">[Error]download.py Download \_\_init\_\_:[Errno 2] No such file or directory: 'proxy.txt'</span>
+<span style="color:cyan">\<Response [200]></span>
 
 
 ## 代码示例2
@@ -85,19 +85,21 @@ for i in range(6):
 
 ## 输出结果2
 
-<span style="color:cyan">[INFO]use proxy:101.231.46.34:8000</span></br>
-<span style="color:green">\<Response [200]\></span></br>
-<span style="color:cyan">[INFO]use proxy:101.231.46.34:8000</span></br>
-<span style="color:green">\<Response [200]\></span></br>
-<span style="color:cyan">[INFO]change proxy:124.88.67.52:843</span></br>
-<span style="color:green">\<Response [200]\></span></br>
-<span style="color:cyan">[INFO]use proxy:124.88.67.52:843</span></br>
-<span style="color:green">\<Response [200]\></span></br>
-<span style="color:cyan">[INFO]change proxy:122.72.32.73:80</span></br>
-<span style="color:cyan">[INFO]change proxy:124.88.67.17:82</span></br>
-<span style="color:green">\<Response [200]\></span></br>
-<span style="color:cyan">[INFO]use proxy:124.88.67.17:82</span></br>
+
+<span style="color:cyan">[INFO]use proxy:101.231.46.34:8000</span>
 <span style="color:green">\<Response [200]\></span>
+<span style="color:cyan">[INFO]use proxy:101.231.46.34:8000</span>
+<span style="color:green">\<Response [200]\></span>
+<span style="color:cyan">[INFO]change proxy:124.88.67.52:843</span>
+<span style="color:green">\<Response [200]\></span>
+<span style="color:cyan">[INFO]use proxy:124.88.67.52:843</span>
+<span style="color:green">\<Response [200]\></span>
+<span style="color:cyan">[INFO]change proxy:122.72.32.73:80</span>
+<span style="color:cyan">[INFO]change proxy:124.88.67.17:82</span>
+<span style="color:green">\<Response [200]\></span>
+<span style="color:cyan">[INFO]use proxy:124.88.67.17:82</span>
+<span style="color:green">\<Response [200]\></span>
+
 
 ## 代理文件(这里注意必须是这种格式)
 
