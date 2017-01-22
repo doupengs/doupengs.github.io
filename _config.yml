@@ -76,6 +76,9 @@ friends: [
     {
         title: "廖雪峰的官方网站",
         href: "http://www.liaoxuefeng.com"
+    },{
+        title: "Accelerator、的博客",
+        href: "http://sweets.cf"
     }
 ]
 
