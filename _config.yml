@@ -72,18 +72,12 @@ featured-condition-size: 0              # A tag will be featured if the size of 
 
 
 # Friends
-#friends: [
-#    {
-#        title: "百度",
-#        href: "https://www.baidu.com"
-#    },{
-#        title: "京东",
-#        href: "https://www.jd.com"
-#    },{
-#        title: "淘宝",
-#        href: "https://www.taobao.com/"
-#    }
-#]
+friends: [
+    {
+        title: "廖雪峰的官方网站",
+        href: "http://www.liaoxuefeng.com"
+    }
+]
 
 #extra setting 
 encoding: utf-8
