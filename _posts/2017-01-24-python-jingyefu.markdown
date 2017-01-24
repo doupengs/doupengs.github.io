@@ -15,7 +15,7 @@ tags:
 
 #### 先看一下五福界面
 
-![img](img/AR-zhifubao.jpg)
+![img](/img/AR-zhifubao.jpg)
 
 先来解释一下什么是**AR**，百度百科:
 
@@ -27,8 +27,8 @@ tags:
 
 但是根据我的理解AR不应该是这个样子吗?
 
-![gif](img/AR-girl.gif)
-![gif](img/AR-meinv.gif)
+![gif](/img/AR-girl.gif)
+![gif](/img/AR-meinv.gif)
 
 ```
 为什么就变成摄像头识别文字了呢
