@@ -85,10 +85,9 @@
 	body {
 		width: 100%;
 		height: 100%;
-		background-size: cover;
 		background-color: #ffffff;
 		background-image: url("../img/mp_bg.jpg");
-		background-repeat: no-repeat;
+		background-repeat: repeat;
 	}
 
 		body:after {
