@@ -74,11 +74,11 @@ tags:
 
 ```
 点击[这里](https://doupengs.github.io)跳转到**@猿来如此** </br>
-![img](https://github.com/doupengs/doupengs.github.io/blob/master/img/wechat-me.jpg)
+![img](https://raw.githubusercontent.com/doupengs/doupengs.github.io/master/img/wechat-me.jpg)
 ```
 
-点击[这里](https://doupengs.github.io)跳转到**@猿来如此** </br>
-![img](https://github.com/doupengs/doupengs.github.io/blob/master/img/wechat-me.jpg)
+点击[这里](https://doupengs.github.io)跳转到**@猿来如此**
+![img](https://raw.githubusercontent.com/doupengs/doupengs.github.io/master/img/wechat-me.jpg)
 
 ```
 * 姓名
