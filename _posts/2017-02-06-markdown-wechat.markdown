@@ -37,10 +37,15 @@ tags:
 ```
 
 # 一级标题
+
 ## 二级标题
+
 ### 三级标题
+
 #### 四级标题
+
 ##### 五级标题
+
 ###### 六级标题
 
 ```
@@ -68,12 +73,12 @@ tags:
 ---
 
 ```
-点击[这里](https://doupengs.github.io)跳转到**@猿来如此**
-![img](http://#)
+点击[这里](https://doupengs.github.io)跳转到**@猿来如此** </br>
+![img](https://github.com/doupengs/doupengs.github.io/blob/master/img/wechat-me.jpg)
 ```
 
-点击[这里](https://doupengs.github.io)跳转到**@猿来如此**
-![img](http://#)
+点击[这里](https://doupengs.github.io)跳转到**@猿来如此** </br>
+![img](https://github.com/doupengs/doupengs.github.io/blob/master/img/wechat-me.jpg)
 
 ```
 * 姓名
@@ -115,9 +120,9 @@ print response.text
 
 > 这里也有更加详细的一些事例
 
-* https://www.zybuluo.com/mdeditor
-* http://mahua.jser.me/
-* http://tool.oschina.net/markdown/
+* [markdown在线编辑器1](https://www.zybuluo.com/mdeditor)
+* [markdown在线编辑器2](http://mahua.jser.me/)
+* [markdown在线编辑器3](http://tool.oschina.net/markdown/)
 
 ### 四、微信公众号文章排版
 
