@@ -1,0 +1,365 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-cn">
+<head>
+　　<title>情人节测试</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Language" content="zh-CN" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- 新 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){ 
+		$('.indexButton').click(function(){ //页面显示
+			var buttonName = $(this).attr("name");
+			switch (buttonName){
+				case 'op1':
+				$('.page').hide(1000);
+				$('.page1').show();
+				break;
+				case 'op2':
+				$('.page').hide(1000);
+				$('.page2').show();
+				break;
+				case 'op3':
+				$('.page').hide(1000);
+				$('.page3').show();
+				break;
+				case 'op4':
+				$('.page').hide(1000);
+				$('.page4').show();
+				break;
+				default:
+				$('.page').hide(1000);
+				$('.page0').show();
+			}
+		})
+		$('.pageButton').click(function(){
+			var form = $(this).closest('form');
+			var formName = form.attr('name');
+			var opValue = form.children("label").children("input[name='inlineRadioOptions']:checked").val();
+			//alert(formName);
+			function check(){
+				if(!opValue){
+					alert('请选择');
+					return 0;
+				}else{
+					return 1;
+				}
+			}
+			function form1(inValue){
+				$('.form1').hide(1000);
+				var write1 = $('.form1Write');
+				switch(inValue){
+					case '1':
+					write1.html('祝加个曰为&ldquo;视&rdquo;看见的意思，代表近3个月内，你会看见令你心仪的对象，但是你们的交往情形，并不会有太大的进展，有一种&ldquo;看得到，吃不到&rdquo;的感觉，建议你再加把劲。<br/> <br/> 心仪对象出现指数二星');
+					break;
+					case '2':
+					write1.html('我去一撇为&ldquo;找&rdquo;，代表你目前还在寻找对象，所以在近3个月内你的交往关系复杂，而且你会觉得非常的累，与交往的对象之间，容易出现有争执的情况，到头来皆为一场空，建议你要克制一下自己的情绪压力。<br/> <br/> 心仪对象出现指数二星');
+					break;
+					case '3':
+					write1.html('自一横往上拉为&ldquo;百&rdquo;，代表近3个月内，你会遇到心仪的对象，而且你们的交往适合速战速决，所以，恭禧你，好事将近，你可以开心的度过今年的情人节。<br/> <br/> 心仪对象出现指数四星');
+					break;
+					case '4':
+					write1.html('己有&ldquo;乙&rdquo;的字型，甲代表阳，乙代表阴，所以表示近3个月内，你会碰到的心仪对象，而且他的个性相当温柔且心胸开阔，这段期间，是增近彼此感情的最佳时机，好好享受这段恋情带给你的愉悦，你们是相当速配的一对。<br/><br/>心仪对象出现指数五星');
+					break;
+					case '5':
+					write1.html('情拆字为&ldquo;心&rdquo;&ldquo;青&rdquo;，代表&ldquo;心&rdquo;有悸动的意思，表示你这3个月，容易遇到口才佳的心仪对象，他喜欢在言语上亏你，但你会感觉到相当喜欢他，且常会有脸红心跳的感觉出现。<br/> <br/> 心仪对象出现指数四星');
+					break;
+					case '6':
+					write1.html('人加一横为&ldquo;大&rdquo;，代表个性强硬，表示别人不喜欢与你交往，暗喻着独自一人的意思。所以在未来的3个月内，出现心仪的对象机率很小，不过也不要泄气，该出现的时候，他就会出现。<br/> <br/> 心仪的对象出现指数一星');
+					break;
+					case '7':
+					write1.html('节拆字为&ldquo;竹&rdquo;&ldquo;即&rdquo;，&ldquo;竹&rdquo;为绿色，代表东方。&ldquo;即&rdquo;有&ldquo;卯&rdquo;字型，而&ldquo;卯&rdquo;代表曰出东方。所以表示，近3个月内你会认识的新对象会在东方，而且他喜欢早起运动喔！建议你多参加往东方的活动。<br/> <br/> 心仪的对象出现指数三星');
+					break;
+					case '8':
+					write1.html('快拆字为&ldquo;心&rdquo;&ldquo;夬&rdquo;，而&ldquo;夬&rdquo;与&ldquo;怪&rdquo;谐音，代表内心想作怪。所以表示，近3个月内，你可能因为你自己喜欢作怪，而将心仪的对象给吓跑了，建议你要收敛一点。<br/> <br/> 心仪的对象出现指数一星');
+					break;
+					case '9':
+					write1.html('乐代表大白天两人在木制的器具上，所以在近3个月内，你与你心仪的对象关系密切，2人之间的相处也很融洽，恋情方面也会有不错的进展，可以考虑长期交往的可能性。<br/> <br/> 心仪的对象出现指数五星');
+					break;
+					default:
+					write1.html('查找错误');
+				}
+			}
+			function form2(inValue){
+				$('.form2').hide(1000);
+				var write2 = $('.form2Write');
+				switch(inValue){
+					case '1':
+					write2.html('现在似乎还没有交异性朋友的动力，即使有人向你示好也会被拒于门外;旅行或文艺活动会有助于你的桃花运。');
+					break;
+					case '2':
+					write2.html('你是真的没有桃花运，甚至连人缘也有点问题，与其胡乱放电，不如检讨一下问题的环节出在哪里。');
+					break;
+					case '3':
+					write2.html('你的人缘不错，只是普通朋友居多，不过，如果你想从友情升华成爱情，成功的机会其实不小哦!');
+					break;
+					case '4':
+					write2.html('朋友多、人际关系也不错，只是平常有点宅男宅女的倾向，不妨多和朋友相约出外走走，也许很快就有桃花出现了。');
+					break;
+					case '5':
+					write2.html('也许你还没有感觉到，其实已经有人在暗恋你啰!多参加公众事务或是在职场上多多发挥魅力，相信很快就有桃花临门。');
+					break;
+					case '6':
+					write2.html('人缘不错，也不乏对你爱慕的人，建议有空多和朋友聚会，不要把自己闷在家里，如此，才能使桃花快快到来。');
+					break;
+					case '7':
+					write2.html('你应该已经有心仪的对象了，只是这个对象似乎对你并不来电，与其将全部心思放在这，不如海阔天空些，多给自己一点机会;旅行会有助于你的桃花运。');
+					break;
+					default:
+					write2.html('查找错误');
+				}
+			}
+			function form3(inValue){
+				$('.form3').hide(1000);
+				var write3= $('.form3Write');
+				switch(inValue){
+					case '1':
+					write3.html('你过于保护自己让人觉得太过现实，考量太多现实层面的状况会让你太过理智，显得过于保护自己，一旦觉得不快乐的时候就马上拒绝对方，这样的态度自然阻挡了追求者的出现，而且记得要把对旧情人的爱完全放掉，才能重新找到新感情。');
+					break;
+					case '2':
+					write3.html('　因为你的强势把追求者吓跑了，基本上你太过大男人或大女人主义，具有强烈的掌握欲望，处处想要占上风，所以你会想要约束对方，但这样的态度反而会让人不敢接近。');
+					break;
+					case '3':
+					write3.html('太过被动的等待爱情是你的致命伤，如果想要被人追求就得先转变生活圈，才有可能会遇到好的对象。选择这个颜色的人个性会比较保守而且对爱完全理想化，虽然平时可能给人家的感觉是非常开放的，但是她的内在却非常传统，一旦谈恋爱就做好嫁人的心理准备。');
+					break;
+					case '4':
+					write3.html('眼光太高而且爱挑剔别人的你，让人有距离感不敢靠近你，试着把标准放低一点，追求者自然会出现!');
+					break;
+					default:
+					write3.html('查找错误');
+				}
+			}
+			function form4(inValue){
+				$('.form4').hide(1000);
+				var write4 = $('.form4Write');
+				switch(inValue){
+					case '1':
+					write4.html('时不时的拿块抹布在他们附近的窗户边擦一擦，发现他们有亲密举动时立即拿出拖把在桌下搅局。虽然已经分手，但他仍会时不时的想起你，似乎已经将你澹忘，可过去的回忆却能还清晰的浮现在他的脑海裡。');
+					break;
+					case '2':
+					write4.html('趁着送餐的时候视察到他们的动静，还可以让对方看清自己的脸引起心仪对像对你的注意。他只会在翻开旧照片时想起你，对他而言你只是他过去的一段回忆，在你们偶遇时也顶多向你点头一笑。');
+					break;
+					case '3':
+					write4.html('忽然冲到他们的面前指着喜欢的人喊道&ldquo;你居然背着我跟别的人乱搞&rdquo;!他一直对你恋恋不忘，甚至有时做梦都还会梦见你，关于你的一切都已根深蒂固的扎在了他的心裡。');
+					break;
+					case '4':
+					write4.html('坐在离他们最近的地方，不动声色的偷听他们的谈话，偷窥他们的举动。旧情人已经彻底将你抹去了，就连你长什么样子或许他都记不大清了，走在路上也只可能把你当成路人甲。');
+					break;
+					default:
+					write4.html('查找错误');
+				}
+			}
+			var result = check();
+			if(result == 1){
+				switch(formName){
+					case 'form1':
+					form1(opValue);
+					break;
+					case 'form2':
+					form2(opValue);
+					break;
+					case 'form3':
+					form3(opValue);
+					break;
+					case 'form4':
+					form4(opValue);
+					break;
+					default:
+					$('.page').css("display","none");
+					$('.page0').css("display","block");
+				}
+			}
+			
+		})
+		$('.backIndex').click(function(){
+			$('.page').css("display","none");
+			$('.page0').css("display","block");
+		})
+	})
+	</script>
+	<style type="text/css">
+		h1,h5{
+			text-align: center;
+		}
+		.page1, .page2, .page3, .page4{
+			display: none;
+		}
+		button{
+			width:100%;
+			margin-top:10px;
+		}
+		.write{
+			width:90%;
+			margin:0 auto;
+			overflow: hidden;
+		}
+		.pageButton{
+			width: 100%;
+			margin-top:20px;
+		}
+		.backIndex{
+			margin-top:20px;
+			width: 100%;
+			
+		}
+		.footer{
+			position: absolute;
+			bottom: 30px;
+			
+		}
+		.zzcj{
+			position: absolute;
+			bottom: 10px;
+			display:none;
+		}
+		.copy{
+			width:100%;
+			text-align:center;
+			position: absolute;
+			bottom:5px;
+		}
+	</style>
+</head>
+<body class="bg-warning">
+	<div class="container-fluid ">
+		<div class="page0 page">
+			<div class="headTitle">
+				<h1>情人节爱情测试</h1>
+				<hr>
+				<h5>猿来如此 一 家专门做爱情❤测试的网站</h4>
+				<hr>
+			</div>
+			<div class="indexOption">
+			 <button type="button" class="btn btn-primary btn-lg indexButton" name="op1">一个字测出你的心上人</button>
+			 <button type="button" class="btn btn-primary btn-lg indexButton" name="op2">测测你的桃花会出现在哪</button>
+			 <button type="button" class="btn btn-primary btn-lg indexButton" name="op3">测试你单身的理由</button>
+			 <button type="button" class="btn btn-primary btn-lg indexButton" name="op4">旧情人是否会想你</button>	
+			 </div>
+			 <div class="zzcj">
+			 	<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254409703'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/stat.php%3Fid%3D1254409703' type='text/javascript'%3E%3C/script%3E"));</script>
+			 </div>
+			 <div class="copy">Copyright © <a href="https://doupengs.github.io">猿来如此</a> 2017</div>
+		</div>
+		<!--第一个页面-->
+		<div class="page1 page">
+			<h1>一个字测出你的心上人</h1>
+			<form class="form1" name="form1">
+				<label>测字开始：请凭自己的第一直觉，从中国字中“祝我自己情人节快乐”9个字中，选出你最喜欢的一个字。</label><br/>
+				<label class="radio-inline">
+				  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1">祝
+				</label><br/>
+				<label class="radio-inline">
+				  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2">我
+				</label><br/>
+				<label class="radio-inline">
+				  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="3">自
+				</label><br/>
+				<label class="radio-inline">
+				  <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="4"> 己
+				</label><br/>
+				<label class="radio-inline">
+				  <input type="radio" name="inlineRadioOptions" id="inlineRadio5" value="5">情
+				</label><br/>
+				<label class="radio-inline">
+				  <input type="radio" name="inlineRadioOptions" id="inlineRadio6" value="6"> 人
+				</label><br/>
+				<label class="radio-inline">
+				  <input type="radio" name="inlineRadioOptions" id="inlineRadio7" value="7"> 节
+				</label><br/>
+				<label class="radio-inline">
+				  <input type="radio" name="inlineRadioOptions" id="inlineRadio8" value="8">快
+				</label><br/>
+				<label class="radio-inline">
+				  <input type="radio" name="inlineRadioOptions" id="inlineRadio9" value="9">乐
+				</label><br/>
+				<!-- <button class="btn btn-default pageButton">提交</button> -->
+				<a href="javascript:void(0)" class="btn btn-default pageButton">提交</a>
+			</form>
+			<div class="form1Write write"></div>
+			<a href="javascript:void(0)" class="btn btn-default  backIndex">返回测试首页</a>
+		 </div>
+		 <!--第二个页面-->
+		<div class="page2 page">
+			<h1>测测你的桃花会出现在哪</h1>
+			<form class="form2" name="form2">
+				<label>这天史努比躺在屋顶胡思乱想，突然灵机一动，想要找查理布朗听爵士乐。请问，你觉得查理布朗人在哪里？</label><br/>
+				<label class="radio-inline">
+				  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1">1、马路边
+				</label><br/>
+				<label class="radio-inline">
+				  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2">2、湖边
+				</label><br/>
+				<label class="radio-inline">
+				  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="3">3、市场
+				</label><br/>
+				<label class="radio-inline">
+				  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="4"> 4、家里
+				</label><br/>
+				<label class="radio-inline">
+				  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="5">5、市民广场
+				</label><br/>
+				<label class="radio-inline">
+				  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="6">6、艺品店
+				</label><br/>
+				<label class="radio-inline">
+				  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="7">7、公园
+				</label><br/>
+				<a href="javascript:void(0)" class="btn btn-default pageButton">提交</a>
+			</form>
+			<div class="form2Write write"></div>
+			<a href="javascript:void(0)" class="btn btn-default  backIndex">返回测试首页</a>
+		</div>
+		 <!--第三个页面-->
+		<div class="page3 page">
+			<h1>测试你单身的理由</h1>
+			<form class="form3 " name="form3">
+				<label>测试题目：请从下面几个选项中选择一个颜色组合。</label><br/>
+				<label class="radio-inline">
+				  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1">1、橘色跟黄色
+				</label><br/>
+				<label class="radio-inline">
+				  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2">2、红色跟黄色
+				</label><br/>
+				<label class="radio-inline">
+				  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="3">3、紫色跟粉红色
+				</label><br/>
+				<label class="radio-inline">
+				  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="4">4、绿色跟粉红色
+				</label><br/>
+				<a href="javascript:void(0)" class="btn btn-default pageButton">提交</a>
+			</form>
+			<div class="form3Write write"></div>
+			<a href="javascript:void(0)" class="btn btn-default  backIndex">返回测试首页</a>
+		</div>
+		 <!--第四个页面-->
+		<div class="page4 page">
+			<h1>旧情人是否会想你</h1>
+			<form class="form4" name="form4">
+				<label>题目：假设有一天，得知自己喜欢的对象要与其他的异性到某西餐厅约会，难免会觉得有些担心，很想知道他们的进展情况，此时你会选择扮演以下哪种角色进行侦察?</label><br/>
+				<label class="radio-inline">
+				  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1">1、餐厅卫生员
+				</label><br/>
+				<label class="radio-inline">
+				  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2">2、餐厅服务员
+				</label><br/>
+				<label class="radio-inline">
+				  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="3">3、对方的恋人
+				</label><br/>
+				<label class="radio-inline">
+				  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="4"> 4、顾客
+				</label><br/>
+				<a href="javascript:void(0)" class="btn btn-default pageButton">提交</a>
+			</form>
+			<div class="form4Write write"></div>
+			<a href="javascript:void(0)" class="btn btn-default  backIndex">返回测试首页</a>
+		</div>
+	</div>
+</body>
+</html>
