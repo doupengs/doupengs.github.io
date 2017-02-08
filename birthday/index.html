@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta data-name="scale" data-content-width="750">
+    <script src="scale.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title></title>
+</head>
+<body>
+    <section id="cover"></section>
+    <section id="cover1"></section>
+    <audio id="mp" loop="loop" preload src="happy-birthday.mp3"></audio>
+    <audio id="mysong" src="heihei.ogg" controls="controls"></audio>
+    <section id="container">
+        <section id="look">
+            <section id="stage">
+                <div id="aroundBox"></div>
+                <div id="cakeBox"></div>
+                <div id="cakeBless">
+                    <div id="blsssCenter">
+                        <img src="heart.png">
+                    </div>
+                </div>
+                <div id="heka">
+                    宝宝生日快乐，首先恭喜宝宝又长大一岁变成大宝宝了。和宝宝度过的这半年感觉很幸福，虽然也有矛盾但也没有拆开我们，感觉两个人在一起的时间嗖的一下就过去了，一辈子会不会也这么快呢，但是有你在身边就好，爱你哟😍
+                    <span>by 梁宸</span>
+                    <img src="heart.png">
+                </div>
+                <div id="xiangce"></div>
+                <div id="fangge">
+                    play
+                </div>
+            </section>
+        </section>
+    </section>
+<script src="index.js"></script>
+<script src="anmation.js"></script>
+<script src="orienter.js"></script>
+<script>
+    (function() {
+        if(!Object.assign) {
+            Object.assign = function() {
+                var arg = [].slice.call(arguments).slice(1)
+                var base = arguments[0]
+                arg.forEach(function(item) {
+                    for(var key in item) {
+                        base[key] = item[key]
+                    }
+                })
+                return base
+            }
+        }
+    }())
+
+    
+    var oldX, oldY
+    var timer
+    window.addEventListener('load', function jud() {
+        var endTime = new Date('Wed Dec 7 2016 00:00:00')
+        var dis = Date.now() - endTime.getTime() 
+        if (dis > 0) {
+            cover1.style.opacity = 0
+            mp.play()
+            init()
+        } else {
+            var day = Math.floor(-dis / 86400000)
+            cover1.style.lineHeight = window.innerHeight + 'px'
+            cover1.innerHTML = new Date().getHours() + ':' + new Date().getMinutes() + ':' + new Date().getSeconds()
+            timer = setTimeout(function() {
+                jud()
+            }, 1000)
+        }
+    })
+
+    function init() {
+
+        var lookController = Controller3D(look, -10, 0, 300)
+        var stageController = Controller3D(stage, 0, 576, 0)
+        var cakeController = Controller3D(cakeBox, 0, 0, 0)
+        var aroundController = Controller3D(aroundBox, 0, 0, 0)
+
+        var stageinf = 'stage1'
+        var lookDisabled = {
+            stage1: {
+                x1: 572,
+                x2: 580, 
+                y1: -20,
+                y2: -20
+            },
+            stage2: {
+            }
+        }
+        var cakeTopWidth = 300
+        var cakeCenterWidth = 300
+        var cakeBottomWidth = 300
+
+        var candleWidth = 8
+
+        let stageNo
+
+
+        function createCake() {
+            var commonStyle = {
+                left: '50%',
+                marginLeft: '-150px',
+            }
+            //生日蛋糕
+            var cakeLayerTop = new Cylinder(cakeTopWidth, 50, Object.assign({
+                background: '#FEFAE9',
+                top: '100px',
+            }, commonStyle), createHappyBrithday()).appendTo(cakeBox)
+
+            var cakeLayerTopS = new Cylinder(cakeTopWidth, 20, Object.assign({
+                background: '#8A6961',
+                top: '150px'
+            }, commonStyle)).appendTo(cakeBox)
+            var cakeLayerCenter = new Cylinder(cakeCenterWidth, 50, Object.assign({
+                background: '#fcd690',
+                top: '170px'
+            }, commonStyle)).appendTo(cakeBox)
+            var cakeLayerCenterS = new Cylinder(cakeCenterWidth, 20, Object.assign({
+                background: '#8A6961',
+                top: '220px'
+            }, commonStyle)).appendTo(cakeBox)
+            var cakeLayerBottom = new Cylinder(cakeBottomWidth, 50, Object.assign({
+                background: '#febbaf',
+                top: '240px'
+            }, commonStyle)).appendTo(cakeBox)
+            var cakeLayerBottomS = new Cylinder(cakeBottomWidth, 20, Object.assign({
+                background: '#8A6961',
+                top: '290px'
+            }, commonStyle)).appendTo(cakeBox)
+
+            new Cylinder(candleWidth, 20, Object.assign({
+                background: '#8A6961',
+                top: '80px',
+                left: '-80px'
+            })).appendTo(cakeBox)
+            new Cylinder(candleWidth, 20, Object.assign({
+                background: '#FEFAE9',
+                top: '60px',
+                left: '-80px'
+            })).appendTo(cakeBox)
+            new Cylinder(candleWidth, 20, Object.assign({
+                background: '#8A6961',
+                top: '40px',
+                left: '-80px'
+            })).appendTo(cakeBox)
+            new Cylinder(candleWidth, 20, Object.assign({
+                background: '#FEFAE9',
+                top: '20px',
+                left: '-80px'
+            })).appendTo(cakeBox)
+            new Cylinder(candleWidth, 20, Object.assign({
+                background: '#8A6961',
+                top: '0px',
+                left: '-80px'
+            })).appendTo(cakeBox)
+
+            new Cylinder(candleWidth, 20, Object.assign({
+                background: '#8A6961',
+                top: '80px',
+                right: '-80px'
+            })).appendTo(cakeBox)
+            new Cylinder(candleWidth, 20, Object.assign({
+                background: '#FEFAE9',
+                top: '60px',
+                right: '-80px'
+            })).appendTo(cakeBox)
+            new Cylinder(candleWidth, 20, Object.assign({
+                background: '#8A6961',
+                top: '40px',
+                right: '-80px'
+            })).appendTo(cakeBox)
+            new Cylinder(candleWidth, 20, Object.assign({
+                background: '#FEFAE9',
+                top: '20px',
+                right: '-80px'
+            })).appendTo(cakeBox)
+            new Cylinder(candleWidth, 20, Object.assign({
+                background: '#8A6961',
+                top: '0px',
+                right: '-80px'
+            })).appendTo(cakeBox)
+
+            new Cylinder(14, 14, Object.assign({
+                background: '#febbaf',
+                top: '-20px',
+                right: '-83px',
+                borderRadius: '0px'
+            })).appendTo(cakeBox)
+            new Cylinder(14, 14, Object.assign({
+                background: '#febbaf',
+                top: '-20px',
+                left: '-83px',
+                borderRadius: '0px'
+            })).appendTo(cakeBox)
+
+
+            // 祝福语
+        }
+
+        var aroundPicSrc = [{
+                text: '那一天，我们在这里相遇',
+                src: './redrock.JPG'
+            }, {
+                text: '在这里陌生过',
+                src: './2105.JPG'
+            }, {
+                text: '在这里熟悉过',
+                src: './hetang.jpg'
+            }, {
+                text: '在这里相恋过',
+                src: './cq.jpg'
+            }, {
+                text: '在这里开心过',
+                src: './wanwan.JPG'
+            }, {
+                text: '在这里散步过',
+                src: './sanbu.JPG'
+            }, {
+                text: '在这里拥抱过',
+                src: './baobao.JPG'
+            }, {
+                text: '一起走过了209天',
+                src: './209.JPG'
+            }, {
+                text: '恭喜你又长大一岁',
+                src: './dayisui.JPG'
+            }, {
+                text: '生日快乐！',
+                src: ''
+            }
+        ]
+
+        function createAround() {
+            var around = new CylinderX(10, {
+                width: '210px',
+                height: '210px',
+                top: '-200px',
+                border: '10px solid #FEFAE9',
+                overflow: 'hidden',
+                borderRadius: '6px'
+            }, createAroundPic(aroundPicSrc)).appendTo(aroundBox)
+            window.deg = around.deg
+            window.picZ = around.len
+        }
+
+        function createAroundPic(aroundPicSrc) {
+            return aroundPicSrc.map(function(item) {
+                var div = document.createElement('div')
+                div.innerHTML = `
+                    <img class="pic-bg" src="${item.src}"></img>
+                    <p class="pic-text">${item.text}</p>
+                `
+                div.style.WebkitTransform = 'rotateY(180deg)'
+                div.style.WebkitTransformStyle = 'preserve-3d';
+                div.style.width = '100%'
+                div.style.height = '100%'
+                div.style.borderRadius = '6px'
+                return div
+            })
+        }
+
+        function createHappyBrithday(html) {
+            var content = document.createElement('p')
+            var style = {
+                width: cakeTopWidth + 'px',
+                height: cakeTopWidth + 'px',
+                lineHeight: cakeTopWidth + 'px',
+                textAlign: 'center',
+                fontSize: '30px',
+                color: '#8A6961',
+                background: html ? '' : 'url(logo.png) center center no-repeat',
+                backgroundSize: '220px 80px'
+            }
+            for (var key in style)
+                content.style[key] = style[key]
+            if (html)
+                content.innerHTML = html
+            return content
+        }
+        /*
+        *
+        *  入场动画
+        *
+        */
+        function startAnmation() {
+            var director = new Anmation()
+            director.add(
+                stage, {
+                    startStyle: {
+                        WebkitTransform: 'rotateX(-60deg) rotateY(706deg) translateZ(0px)'
+                    },
+                    endStyle: {
+                        WebkitTransform: 'rotateX(0deg) rotateY(576deg) translateZ(0px)'
+                    },
+                    startIn: 0,
+                    // endIn: 10
+                    endIn: 7000
+                }
+            )
+            director.add(
+                look, {
+                    startStyle: {
+                        WebkitTransform: 'rotateX(0deg) rotateY(0deg) translateZ(300px)'
+                    },
+                    endStyle: {
+                        WebkitTransform: 'rotateX(-10deg) rotateY(0deg) translateZ(300px)'
+                    },
+                    startIn: 0,
+                    // endIn: 10
+                    endIn: 4000
+                }
+            )
+            var x = window.innerWidth / 2
+            var y = window.innerHeight / 2
+            let r = 0
+
+            director.add(
+                cover, {
+                    startIn: 0,
+                    // endIn: 0
+                    endIn: 16000
+                }, false, function() {
+                    r += 4
+                    if (r > 800)
+                        return
+                    cover.style.background = `-webkit-gradient(radial,${x} ${y},0,${x} ${y},${r},from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 1)))`
+                }
+            )
+            setTimeout(function() {
+                stageinf = 'stage2'
+                // cover1.style.display = 'none'
+                // cover.style.display = 'none'
+                alert('现在可以随意转动视角了，手指上下滑动可以调节远近，场景里面藏了神秘的东西嘿嘿嘿')
+            }, (aroundPicSrc.length - 1) * 15000 + 23000)
+            for (let i = 0, len = aroundPicSrc.length; i < len; i ++) {
+                director.add(
+                    aroundBox, {
+                        startIn: i * 15000 + 21000,
+                        endIn: i * 15000 + 23000,
+                        startStyle: {
+                            WebkitTransform: `rotateY(${i * window.deg}deg)`,
+                        },
+                        endStyle: {
+                            WebkitTransform: `rotateY(${(i + 1) * window.deg}deg)`,
+                        }
+                    }, true
+                )
+                // director.add(
+                //     cakeBox, {
+                //         startIn: i * 15000 + 21000,
+                //         endIn: i * 15000 + 23000,
+                //         startStyle: {
+                //             WebkitTransform: `rotateY(${i * 14.4}deg)`,
+                //         },
+                //         endStyle: {
+                //             WebkitTransform: `rotateY(${(i + 1) * 14.4}deg)`,
+                //         }
+                //     }, true
+                // )
+                var item = aroundBox.children[aroundBox.children.length - i - 1]
+                director.add(
+                    item, {
+                        startIn: i * 15000 + 10000,
+                        endIn: i * 15000 + 12000,
+                        startStyle: {
+                            WebkitTransform: `${item.style.WebkitTransform}`,
+                        },
+                        endStyle: {
+                            WebkitTransform: `${item.style.WebkitTransform.replace(/translateZ\(.+?\)/, '')} translateZ(${window.picZ - 1000}px)`,
+                            border: '10px solid transparent',
+                        }
+                    }, true
+                )
+                director.add(
+                    item, {
+                        startIn: i * 15000 + 16000,
+                        endIn: i * 15000 + 19000,
+                        startStyle: {
+                            WebkitTransform: `${item.style.WebkitTransform}`,
+                        },
+                        endStyle: {
+                            WebkitTransform: `${item.style.WebkitTransform.replace(/translateZ\(.+?\)/, '')} translateZ(${window.picZ}px)`,
+                            border: '10px solid #FEFAE9',
+                        }
+                    }, true
+                )
+                director.add(
+                    item.children[0].children[1], {
+                        startIn: i * 15000 + 10000,
+                        endIn: i * 15000 + 12000,
+                        startStyle: {
+                            opacity: 0,
+                        },
+                        endStyle: {
+                            opacity: 1,
+                        }
+                    }, true
+                )
+                director.add(
+                    item.children[0].children[0], {
+                        startIn: i * 15000 + 14000,
+                        endIn: i * 15000 + 16000,
+                        startStyle: {
+                            opacity: 1,
+                        },
+                        endStyle: {
+                            opacity: 1,
+                        }
+                    }, true
+                )
+                // director.add(
+                //     item, {
+                //         startIn: (len - 1) * 15000 + 21000,
+                //         endIn: (len - 1) * 15000 + 23000,
+                //         startStyle: {
+                //             opacity: 1
+                //         },
+                //         endStyle: {
+                //             opacity: 0
+                //         }
+                //     }, true
+                // )
+            }
+
+            director.init()
+            director.start()
+        }
+
+        (function() {
+
+            var pos = {
+                x: 0,
+                y: 0
+            }
+            let olat, olon, flag = false
+
+            setTimeout(function() {
+                var o = new Orienter({
+                    orient (inf) {
+                        if (olat)
+                            lookAround(olon - inf.lon, inf.lat - olat)
+                        olat = inf.lat
+                        olon = inf.lon
+                    }
+                })
+                o.init()
+            }, 8000)
+
+        })()
+
+        function lookAround(disX, disY) {
+            var inf = stageController.getInf()
+
+            if ((inf.rotateX + disY <= lookDisabled[stageinf].y1 && inf.rotateX + disY >= lookDisabled[stageinf].y2) || lookDisabled[stageinf].y1 === undefined) 
+                stageController.rotateX(disY)
+            if ((inf.rotateY + disX >= lookDisabled[stageinf].x1 && inf.rotateY + disX <= lookDisabled[stageinf].x2) || !lookDisabled[stageinf].x1)
+                stageController.rotateY(disX)
+
+            stageController.update()
+        }
+
+        function lookLear(dis) {
+            var inf = lookController.getInf()
+            // if (inf.translateZ + dis > 1000 || inf.translateZ + dis < -3000)
+            //     return
+            lookController.translateZ(dis)
+            lookController.update()
+        }
+        createCake()
+        createAround()
+        startAnmation()
+
+
+        window.addEventListener('touchstart', function(e) {
+            e.preventDefault()
+            if(stageinf !== 'stage2')
+                return
+            oldY = e.touches[0].clientY
+            oldX = e.touches[0].clientX
+        })
+        window.addEventListener('touchmove', function(e) {
+            e.preventDefault()
+            if(stageinf !== 'stage2')
+                return
+            lookLear(e.touches[0].clientY - oldY)
+            lookAround(e.touches[0].clientX - oldX, 0)
+            oldY = e.touches[0].clientY
+            oldX = e.touches[0].clientX
+        })
+
+        fangge.addEventListener('touchstart', function(e) {
+            if (mysong.paused) {
+                mysong.play()
+                mp.stop()
+                this.innerHTML = 'stop'
+            } else {
+                mysong.pause()
+                mp.play()
+                this.innerHTML = 'play'
+            }
+        })
+        fangge.addEventListener('click', function(e) {
+            if (mysong.paused) {
+                mysong.play()
+                mp.stop()
+                this.innerHTML = 'stop'
+            } else {
+                mysong.pause()
+                mp.play()
+                this.innerHTML = 'play'
+            }
+        })
+        mysong.addEventListener('ended', function() {
+           fangge.innerHTML = 'play' 
+           mp.play()
+        })
+
+    }
+</script>
+</body>
+</html>
