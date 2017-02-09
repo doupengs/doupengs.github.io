@@ -1,70 +1,46 @@
-<head>
-<style>
-body {
-	background-color: #c6070c;
-	color: #ffe392;
-	font-family: "Lato", Helvetica, Arial, "ヒラギノ角ゴシック体 GB W6", Hiragino Sans GB W6, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-	text-align: center;
-}
-table {
-	padding-top: 80px;
-	 margin: auto;
-	 width: 30%;
-}
-.pinyin {
-	height: 20px;
-	font-size: 1.1em;
-	letter-spacing: 3px;
-	font-weight: 400;
-}
-td {
-	font-size: 8em;
-	text-align: center;
-	font-weight: 700;
-	padding: 0px;
-}
-h2 {
-	margin-top: 15px;
-	margin-bottom: 100px;
-	font-size: 3em;
-	text-transform: uppercase;
-	font-weight: 700;
-	word-spacing: 5px;
-}
-p {
-	font-weight: 700;
-	letter-spacing: 1px;
-	word-spacing: 2px;
-}
-button {
-	background-color: #ef941a;
-	color: #fffbe2;
-	width: 200px;
-	position: relative;
-	border-radius: 5px;
-	margin: 0;
-	padding: 0;
-	line-height: 0.5;
-	cursor: pointer;
-	border: none;
-	outline: none;
-	font-size: 0.9em;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-}
-button:hover, button:focus {
-	background-color: #efa134;
-}
-button:active {
-	transform: translate(0px, 2px);
-	-webkit-transform: translate(0px, 2px);
-  }
-</style>
-<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'></head>
-
-	<body>
-
-		<!-- Table for aligning pinyin and Chinese characters -->
+<html>
+    <head>
+    	<title>2017献祝福 - @猿来如此</title>
+    	<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'></head>
+        <style>
+            body {
+	            background-color: #c6070c;
+	            color: #ffe392;
+	            font-family: "Lato", Helvetica, Arial, "ヒラギノ角ゴシック体 GB W6", Hiragino Sans GB W6, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	            text-align: center;}
+            table {
+	            padding-top: 80px;
+	            margin: auto;
+	            width: 30%;}
+            .pinyin {
+	            height: 20px;
+	            font-size: 3em;
+	            letter-spacing: 3px;
+	            font-weight: 400;}
+            td {
+	            font-size: 13em;
+	            text-align: center;
+	            font-weight: 700;
+	            padding: 0px;}
+            h2 {
+	            margin-top: 15px;
+	            margin-bottom: 100px;
+	            font-size: 3em;
+	            text-transform: uppercase;
+	            font-weight: 700;
+	            word-spacing: 5px;}
+            p {
+	            font-weight: 700;
+	            font-size: 50px;
+	            letter-spacing: 1px;
+	            word-spacing: 2px;}
+	        a {
+	        	text-decoration: none;
+	            color: #ffe392;}
+        </style>
+    </head>
+    <body>
+    	<br><br>
 		<table>
 			<tr>
 				<th class="pinyin" id="pinyin1">xīn</th>
@@ -79,149 +55,133 @@ button:active {
 				<td id="phraseChinese4">樂</td>
 			</tr>
 		</table>
-
-		<h2 id="phraseEnglish">(Happy new year)</h2>
-	
-		<!--<button type="button" id="button">
-			<p>Generate phrase</p>
-		</button>-->
-        <p style='font-size: 60px'>2017年，祝福大家:</p>
-        <p style='font-size: 60px'>鸿运滚滚来，四季都发财。</p>
-        <p style='font-size: 60px'>鸡年好事多，幸福喜颜开。</p>
-        <p style='font-size: 60px'>步步再高升，事事顺着来。</p>
-        <p style='font-size: 60px'>老友多联系，莫将我忘怀!</p>
-        <p style='font-size: 60px'>--窦朋</p>
-        <p style='font-size: 50px'>Copyright © <a href='https://doupengs.github.io'>猿来如此</a> 2017 </p>
-</body>
-<script>
-var pinyin1 = document.getElementById("pinyin1");
-var pinyin2 = document.getElementById("pinyin2");
-var pinyin3 = document.getElementById("pinyin3");
-var pinyin4 = document.getElementById("pinyin4");
-var phraseChinese1 = document.getElementById("phraseChinese1");
-var phraseChinese2 = document.getElementById("phraseChinese2");
-var phraseChinese3 = document.getElementById("phraseChinese3");
-var phraseChinese4 = document.getElementById("phraseChinese4");
-var phraseEnglish = document.getElementById("phraseEnglish");
-var button = document.getElementById("button");
-var random = Math.random();
-// Arrays for pinyin and Chinese characters
-var p1 = [
-	"xīn",
-	"gōng",
-	"dà",
-	"wàn",
-	"nián",
-	"shēn",
-	"xīn",
-	"gōng"
-];
-var p2 = [
-	"nián",
-	"xǐ",
-	"jí",
-	"shì",
-	"nián",
-	"tǐ",
-	"xiǎng",
-	"hè"
-];
-var p3 = [
-	"kuài",
-	"fā",
-	"dà",
-	"rú",
-	"yǒu",
-	"jiàn",
-	"shì",
-	"xīn"
-];
-var p4 = [
-	"lè",
-	"cái",
-	"lì",
-	"yì",
-	"yú",
-	"kāng",
-	"chéng",
-	"xǐ"
-];
-var phrasesC1 = [
-	"新",
-	"恭",
-	"大",
-	"萬",
-	"年",
-	"身",
-	"心",
-	"恭"
-];
-var phrasesC2 = [
-	"年",
-	"喜",
-	"吉",
-	"事",
-	"年",
-	"體",
-	"想",
-	"賀"
-];
-var phrasesC3 = [
-	"快",
-	"發",
-	"大",
-	"如",
-	"有",
-	"健",
-	"事",
-	"新"
-];
-var phrasesC4 = [
-	"樂",
-	"財",
-	"利",
-	"意",
-	"餘",
-	"康",
-	"成",
-	"禧"
-];
-// English phrases
-// Translations taken from here: http://www.travelsintranslation.com/2014/01/cantonese-chinese-new-year-phrases/
-var phrasesE = [
-	"(Happy new year)",
-	"(Congratulations on your prosperity)",
-	"(Great luck and prosperity)",
-	"(May 10,000 things go according to your wishes)",
-	"(Every year have more than you need)",
-	"(Wishing you good health)",
-	"(May all your heart's desires come true)",
-	"(Congratulations in the new year)"
-];
-// Sets text content as random phrase from arrays
-pinyin1.textContent = p1[Math.floor(random * p1.length)];
-pinyin2.textContent = p2[Math.floor(random * p2.length)];
-pinyin3.textContent = p3[Math.floor(random * p3.length)];
-pinyin4.textContent = p4[Math.floor(random * p4.length)];
-phraseChinese1.textContent = phrasesC1[Math.floor(random * phrasesC1.length)];
-phraseChinese2.textContent = phrasesC2[Math.floor(random * phrasesC2.length)];
-phraseChinese3.textContent = phrasesC3[Math.floor(random * phrasesC3.length)];
-phraseChinese4.textContent = phrasesC4[Math.floor(random * phrasesC4.length)];
-phraseEnglish.textContent = phrasesE[Math.floor(random * phrasesE.length)];
-function onClick() {
-	var random = Math.random();
-	pinyin1.textContent = p1[Math.floor(random * p1.length)];
-	pinyin2.textContent = p2[Math.floor(random * p2.length)];
-	pinyin3.textContent = p3[Math.floor(random * p3.length)];
-	pinyin4.textContent = p4[Math.floor(random * p4.length)];
-	phraseChinese1.textContent = phrasesC1[Math.floor(random * phrasesC1.length)];
-	phraseChinese2.textContent = phrasesC2[Math.floor(random * phrasesC2.length)];
-	phraseChinese3.textContent = phrasesC3[Math.floor(random * phrasesC3.length)];
-	phraseChinese4.textContent = phrasesC4[Math.floor(random * phrasesC4.length)];
-	phraseEnglish.textContent = phrasesE[Math.floor(random * phrasesE.length)];
-	new Audio("http://tts.baidu.com/text2audio?lan=zh&pid=101&ie=UTF-8&text="+phraseChinese1.textContent+phraseChinese2.textContent+phraseChinese3.textContent+phraseChinese4.textContent+"&spd=3").play();
-}
-// Sets text content as random phrase when button is clicked
-setInterval('onClick()',3000);
-button.addEventListener("click", onClick);
-</script>
+		<h3 id="phraseEnglish">(Happy new year)</h3>
+		<audio id="music" controls autoplay loop>
+            <source src="cwjxq.mp3" type="audio/mp3">
+        </audio>
+        <p>2017年，祝福大家:</p>
+        <p>鸿运滚滚来，四季都发财。</p>
+        <p>鸡年好事多，幸福喜颜开。</p>
+        <p>步步再高升，事事顺着来。</p>
+        <p>老友多联系，莫将我忘怀！</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 窦朋</p>
+        <br><br>
+        <small>Copyright © <a href='https://doupengs.github.io'>猿来如此</a> 2017 </small>
+    </body>
+    <script>
+        var pinyin1 = document.getElementById("pinyin1");
+        var pinyin2 = document.getElementById("pinyin2");
+        var pinyin3 = document.getElementById("pinyin3");
+        var pinyin4 = document.getElementById("pinyin4");
+        var phraseChinese1 = document.getElementById("phraseChinese1");
+        var phraseChinese2 = document.getElementById("phraseChinese2");
+        var phraseChinese3 = document.getElementById("phraseChinese3");
+        var phraseChinese4 = document.getElementById("phraseChinese4");
+        var phraseEnglish = document.getElementById("phraseEnglish");
+        var random = Math.random();
+        var p1 = [
+	        "xīn",
+	        "gōng",
+	        "dà",
+	        "wàn",
+	        "nián",
+	        "shēn",
+	        "xīn",
+	        "gōng"];
+        var p2 = [
+	        "nián",
+	        "xǐ",
+	        "jí",
+	        "shì",
+	        "nián",
+	        "tǐ",
+	        "xiǎng",
+	        "hè"];
+        var p3 = [
+	        "kuài",
+	        "fā",
+	        "dà",
+	        "rú",
+	        "yǒu",
+	        "jiàn",
+	        "shì",
+	        "xīn"];
+        var p4 = [
+	        "lè",
+	        "cái",
+	        "lì",
+	        "yì",
+	        "yú",
+	        "kāng",
+	        "chéng",
+	        "xǐ"];
+        var phrasesC1 = [
+	        "新",
+	        "恭",
+	        "大",
+	        "萬",
+	        "年",
+	        "身",
+	        "心",
+	        "恭"];
+        var phrasesC2 = [
+	        "年",
+	        "喜",
+	        "吉",
+	        "事",
+	        "年",
+	        "體",
+	        "想",
+	        "賀"];
+        var phrasesC3 = [
+	        "快",
+	        "發",
+	        "大",
+	        "如",
+	        "有",
+	        "健",
+	        "事",
+	        "新"];
+        var phrasesC4 = [
+	        "樂",
+	        "財",
+	        "利",
+	        "意",
+	        "餘",
+	        "康",
+	        "成",
+	        "禧"];
+        var phrasesE = [
+	        "(Happy new year)",
+	        "(Congratulations on your prosperity)",
+	        "(Great luck and prosperity)",
+	        "(May 10,000 things go according to your wishes)",
+	        "(Every year have more than you need)",
+	        "(Wishing you good health)",
+	        "(May all your heart's desires come true)",
+	        "(Congratulations in the new year)"];
+        pinyin1.textContent = p1[Math.floor(random * p1.length)];
+        pinyin2.textContent = p2[Math.floor(random * p2.length)];
+        pinyin3.textContent = p3[Math.floor(random * p3.length)];
+        pinyin4.textContent = p4[Math.floor(random * p4.length)];
+        phraseChinese1.textContent = phrasesC1[Math.floor(random * phrasesC1.length)];
+        phraseChinese2.textContent = phrasesC2[Math.floor(random * phrasesC2.length)];
+        phraseChinese3.textContent = phrasesC3[Math.floor(random * phrasesC3.length)];
+        phraseChinese4.textContent = phrasesC4[Math.floor(random * phrasesC4.length)];
+        phraseEnglish.textContent = phrasesE[Math.floor(random * phrasesE.length)];
+        function read() {
+	        var random = Math.random();
+	        pinyin1.textContent = p1[Math.floor(random * p1.length)];
+	        pinyin2.textContent = p2[Math.floor(random * p2.length)];
+	        pinyin3.textContent = p3[Math.floor(random * p3.length)];
+	        pinyin4.textContent = p4[Math.floor(random * p4.length)];
+	        phraseChinese1.textContent = phrasesC1[Math.floor(random * phrasesC1.length)];
+	        phraseChinese2.textContent = phrasesC2[Math.floor(random * phrasesC2.length)];
+	        phraseChinese3.textContent = phrasesC3[Math.floor(random * phrasesC3.length)];
+	        phraseChinese4.textContent = phrasesC4[Math.floor(random * phrasesC4.length)];
+	        phraseEnglish.textContent = phrasesE[Math.floor(random * phrasesE.length)];
+	        new Audio("http://tts.baidu.com/text2audio?lan=zh&pid=101&ie=UTF-8&text="+phraseChinese1.textContent+phraseChinese2.textContent+phraseChinese3.textContent+phraseChinese4.textContent+"&spd=3").play();
+        }
+        setInterval('read()',3000);
+    </script>
+</html>
