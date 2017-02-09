@@ -103,7 +103,7 @@ html {
 }
 
 .page2{
-	background-color: #30B95A;
+	background-color: #EE6363;
 }
 
 .page2 ul {width: 100%;height: 100%;}
@@ -115,7 +115,7 @@ html {
 	visibility: hidden;
 	width: 80%;
 	height: 12%;
-	box-shadow: 1px 1px 3px #291DD0;
+	box-shadow: 1px 1px 3px #FFDAB9;
 }
 
 .page2 .subtalk i {
