@@ -178,8 +178,8 @@ $(function() {
     w.load('<b>电话</b>：15133212263<br>');
     w.load('<b>邮箱</b>：doupeng93@foxmail.com<br>');
     w.load('<b>微信</b>：peng113783<br>');
-    //w.load('<img width="200" height="200" src="https://raw.githubusercontent.com/doupengs/doupengs.github.io/master/img/wechat-me.jpg" />');
-    //w.load('<b>QQ</b>：724488033</div>');
+    w.load('<img width="200" height="200" src="https://raw.githubusercontent.com/doupengs/doupengs.github.io/master/img/wechat-me.jpg" /><br>');
+    w.load('<b>QQ</b>：724488033</div>');
     w.load('<h3><font color="#EEAD0E">求职意向</font></h3>');
     w.load('<dd><ul>');
     w.load('<li><strong>工作性质：</strong>全职</li>');
@@ -192,7 +192,7 @@ $(function() {
     w.load("<dd><ul>");
     w.load("<li><strong>个人博客：</strong><a href='https://doupengs.github.io' style='text-decoration: none;'>https://doupengs.github.io</a></li>");
     w.load("<li><strong>Github首页：</strong><a href='https://github.com/doupengs' style='text-decoration: none;'>https://github.com/doupengs</a></li>");
-    w.load('<li><strong>个人微信公众号：</strong>苦短人生遂学python | py_code_boy</li></ul></dd>');
+    w.load('<li><strong>个人微信公众号：</strong>苦短人生遂学python | py_code_boy<br><img width="200" height="200" src="https://raw.githubusercontent.com/doupengs/doupengs.github.io/master/img/wechat-gzh.jpg" /></li></ul></dd>');
     w.load('<h3><font color="#EEAD0E">自我评价</font></h3>');
     w.load('生活中自己是一个乐观向上的人，工作中喜欢明确的分工，有团队意识和责任心，有一点强迫症，但我认为在写代码上是好事，所以我又良好的代码风格，工作中遇到什么难题，我首先会找在网上查阅相关资料，喜欢自学专研，解决不了的难题会像有经验的前辈请教，因为我觉得自己就是这么一步步走过来的，我觉得不怕有什么你不会的，而是就怕你知道不会而不想去了解，去学习。');
     w.load('<h3><font color="#EEAD0E">工作经历</font></h3>');
@@ -221,9 +221,15 @@ $(function() {
     w.load('2016/10 - 2016/11<br>'); 
     w.load('<b>各网站爬虫程序开发</b><br>'); 
     w.load(' <strong>项目简介：</strong><br>'); 
-    w.load('1. 个人和企业社会负面信息收集；(1)中国裁判文书网-裁判文书的抓取。(2)各地政府发布的负面清单-对于各企业的行政处罚信息。(3)中国住建部-建筑行业的招投标相关信息。'); 
-    w.load('2. 舆情新闻：根据各大新闻门户网站新闻的更新频率，即时抓取新闻入库，主要包括以下新闻门户:腾讯网，新浪网，凤凰网，人民网，网易，中国新闻网等等...'); 
-    w.load('3. 天涯论坛帖子的抓取:包括: 标题，链接，发布时间，作者，正文，评论，楼层，阅读数，评论数 等字段,数据入库，定时抓取。'); 
+    w.load('1. 个人和企业社会负面信息收集：<br>'); 
+    w.load("(1)中国裁判文书网-裁判文书的抓取。<br>");
+    w.load("(2)各地政府发布的负面清单-对于各企业的行政处罚信息。<br>");
+    w.load("(3)中国住建部-建筑行业的招投标相关信息。<br>");
+    w.load('2. 舆情新闻：主要包括以下新闻门户:<br>'); 
+    w.load('(1)根据各大新闻门户网站新闻的更新频率，即时抓取新闻入库。<br>');
+    w.load('(2)腾讯网，新浪网，凤凰网，人民网，网易，中国新闻网等等...<br>');
+    w.load('3. 天涯论坛帖子的抓取:<br>'); 
+    w.load('包括: 标题，链接，发布时间，作者，正文，评论，楼层，阅读数，评论数 等字段,数据入库，定时抓取。<br>');
     w.load('<h3><font color="#EEAD0E">职业技能</font></h3>'); 
     w.load('01. 掌握使用urllib,urllib2以及第三方库requests。<br>'); 
     w.load('02. 页面解析方面使用re,json,xpath, beautifulsoup,pyquery。<br>'); 
@@ -232,6 +238,14 @@ $(function() {
     w.load('05. 利用python对TXT,pdf.csv等类型文件的操作。<br>'); 
     w.load('06. 利用api接口抓取网页数据。<br>'); 
     w.load('07. 多线程与多进程的使用。<br>'); 
+    w.load('08. 熟悉Django web框架开发。<br>'); 
+    w.load('09. 熟悉MTV,MVC的“设计模式”，“松耦合的开发理念”。<br>'); 
+    w.load('10. 熟悉Linux操作系统的一些常用命令。<br>'); 
+    w.load('11. 了解mysql，oracle数据库的基本命令和redis数据库。<br>'); 
+    w.load('12. 掌握HTML网页各项标签，DIV+CSS网页布局。<br>'); 
+    w.load('13. 熟悉javascript和jquery定义函数和一些基本的网页特效。<br>'); 
+    w.load('11. 了解mysql，oracle数据库的基本命令和redis数据库。<br>'); 
+    w.load('14. 掌握ajax对象的创建，以及ajax的异步请求和提交。'); 
 
 	c.load("<p><div class='comment writecode'>/*</div>");
 	c.load("<div class='comment writecode'>&nbsp;最后让我们先给他来点动态渲染</div>");
@@ -243,61 +257,23 @@ $(function() {
 	c.load("<div class='code writecode'>&nbsp;<span class='key'>-webkit-transform</span>: <span class='value'>rotateY(190deg) rotateZ(180deg)</span>;</div>");
 	c.load("<div class='code writecode'>}</div></p>");
 	c.load("<p><div class='comment writecode'>/*</div>");
-	c.load("<div class='comment writecode'>&nbsp;好了，让我们准备</div>");
-	c.load("<div class='comment writecode'>&nbsp;</div>");
-	c.load("<div class='comment writecode'>&nbsp;3....</div>");
-	c.load("<div class='comment writecode'>&nbsp;2....</div>");
-	c.load("<div class='comment writecode'>&nbsp;1....</div>");
+	c.load("<div class='comment writecode'>&nbsp;这样基本上就差不多了</div>");
+	c.load("<div class='comment writecode'>&nbsp;最后非常感谢您愿意花3分钟看完我的简历！</div>");
 	c.load("<div class='comment writecode'>&nbsp;差不多了，让简历动起来！</div>");
-	c.load("<div class='comment writecode'>*/</div></p>");
+	c.load("<div class='comment writecode'>*/</div>");
+	c.load("</p>");
+	c.setClass("#work-text", [{
+		"name": "width",
+		"val": "99%"
+	}]);
 	c.setClass("#work-text", [{
 		"name": "-webkit-transform",
-		"val": "rotateX(0deg) rotateY(190deg) rotateZ(180deg)"
+		"val": "rotateX(0deg) rotateY(180deg) rotateZ(180deg)"
 	}]);
 	c.setClass("#work-text #md", [{
 		"name": "-webkit-transform",
-		"val": "rotateY(190deg) rotateZ(180deg)"
+		"val": "rotateY(180deg) rotateZ(180deg)"
 	}]);
-	//c.load("<p><div class='comment writecode'>/**</div>");
-	//c.load("<div class='comment writecode'>&nbsp;*对于文本，我们可以再做一点微调</div>");
-	//c.load("<div class='comment writecode'>&nbsp;*/</div></p>");
-	//c.load("<p><div class='code writecode'><span class='selector'>#md</span> { </div>");
-	//c.load("<div class='code writecode'>&nbsp;<span class='key'>font-family</span>: <span class='value'>'Helvetica Neue', Helvetica, sans-serif</span>;</div>");
-	//c.setClass("#md", [{
-		//"name": "font-family",
-		//"val": "'Helvetica Neue', Helvetica, sans-serif"
-	//}]);
-	//c.load("<div class='code writecode'>}</div></p>");
-	//c.load("<p><div class='code writecode'><span class='selector'>#md h1</span> { </div>");
-	//c.load("<div class='code writecode'>&nbsp;<span class='key'>border-bottom</span>: <span class='value'>1px solid #ccc</span>;</div>");
-	//c.setClass("#md h1", [{
-		//"name": "border-bottom",
-		//"val": "1px solid #ccc"
-	//}]);
-	//c.load("<div class='code writecode'>&nbsp;<span class='key'>padding-bottom</span>: <span class='value'>5px</span>;</div>");
-	//c.setClass("#md h1", [{
-		//"name": "padding-bottom",
-		//"val": "5px"
-	//}]);
-	//c.load("<div class='code writecode'>}</div></p>");
-	//c.load("<p><div class='code writecode'><span class='selector'>#md li</span> { </div>");
-	//c.load("<div class='code writecode'>&nbsp;<span class='key'>margin</span>: <span class='value'>5<span class='px'>px</span> 0</span>;</div>");
-	//c.setClass("#md li", [{
-		//"name": "margin",
-		//"val": "5px 0"
-	//}]);
-	//c.load("<div class='code writecode'>}</div></p>");
-	//c.load("<p><div class='code writecode'><span class='selector'>#md h1,#md ul</span> { </div>");
-	//c.load("<div class='code writecode'>&nbsp;<span class='key'>margin</span>: <span class='value'>0</span>;</div>");
-	//c.setClass("#md h1,#md ul", [{
-		//"name": "margin",
-		//"val": "0"
-	//}]);
-	//c.load("<div class='code writecode'>}</div></p>");
-	c.load("<p><div class='comment writecode'>/*</div>");
-	c.load("<div class='comment writecode'>&nbsp;这样基本上就差不多了</div>");
-	c.load("<div class='comment writecode'>&nbsp;最后非常感谢您愿意花3分钟看完我的简历！</div>");
-	c.load("<div class='comment writecode'>*/</div></p>");
 
 });
 
