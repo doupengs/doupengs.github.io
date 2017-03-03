@@ -173,7 +173,7 @@ $(function() {
     w.load('<hr align="left" color="#FFD39B" width="50%">');
     w.load('<h1>窦朋</h1>');
     w.load('<b>男 | 汉 | 未婚 | 1993年2月 | 2年工作经验</b><br>');
-    w.load('<b>2011/09-2015/06 河北大学-本科 英语|俄语-四级</b><br>');
+    w.load('<b>2011/09-2015/06 河北大学</b><br>');
     w.load('<b>户口</b>：辽宁盘锦 | <b>现住</b>：北京昌平<br>');
     w.load('<b>电话</b>：15133212263<br>');
     w.load('<b>邮箱</b>：doupeng93@foxmail.com<br>');
