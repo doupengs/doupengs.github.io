@@ -8,6 +8,8 @@
 
 - 祝福2017:http://doupengs.github.io/zhufu2017.html
 - 我的名片:http://doupengs.github.io/me.html
+- 我的简历:http://doupengs.github.io/resume.html
+- 我的炫酷简历: http://doupengs.github.io/resume/index.html
 - 生日贺卡页面:https://doupengs.github.io/birthday/index.html
 - 生日贺卡页面2:https://doupengs.github.io/birthday2/index.html
 - 情人节祝福卡片:http://doupengs.github.io/zlove.html
