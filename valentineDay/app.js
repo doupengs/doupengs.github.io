@@ -1,5 +1,5 @@
 ﻿var defaultName = {
-    title: '❥520 快乐❤',
+    title: '❥钰儿 520 快乐❤',
     from: '~爱你的四月哥哥',
     to:   '~我的钰儿',
     wish: '520 快乐！'
@@ -107,10 +107,10 @@ $(function(){
             text:   '<div class="sectionIn">'+
                         '<p>献给<span id="hashTo"></span><br>' +
                             '<span id="hashWish"></span><br>' +
-                            '来自<a href="https://doupengs.github.io"><span id="hashFrom"></span></a> / 2020-05-20' +
+                            '来自<a href="https://doupengs.github.io"><span id="hashFrom"></span></a> <br> 2020-05-20' +
                         '</p>' +
                         '<div class="license">' +
-                            '后面还有哦 <br><br>' +
+                            '<br><br>' +
                             '▼' +
                         '</div>' +
                     '</div>'
