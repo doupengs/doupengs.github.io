@@ -117,19 +117,15 @@ $(function(){
         }, {
             name:   'section5',
             text:   '<div class="sectionIn">'+
-                        '<h2>特别感谢</h2>' +
-                        '<p>/ <a href="https://github.com/superwoods">超级木木</a> / Google doodle /</p>' +
-                        '<div class="btn">' +
-                            '<a href="https://github.com/doupengs">' +
-                            '访问我的 GitHub 首页</a>' +
-                        '</div>' +
+                        '<h2></h2>' +
+                        '<p>/ Google doodle /</p>' +
                         '<div class="license">' +
-                            '<a href="https://github.com/superwoods">'+
-                                '本页面代码使用 MIT 开源协议<br><br>' +
-                                '<a href="https://github.com/doupengs/doupengs.github.io">☛查看源代码</a><br><br>' +
-                                'valentineDay目录下所有文件 <br><br>' +
-                                '以及根目录下的zlove.html文件 '+
-                            '</a>' +
+                            '车马很慢<br>'+
+                            '书信很远<br>' +
+                            '一辈子只够做一件事<br>' +
+                            '一生只够爱一个人<br>' +
+                            ''+
+                            ''+
                         '</div>' +
                     '</div>'
        }
