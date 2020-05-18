@@ -1,8 +1,8 @@
 ﻿var defaultName = {
-    title: '❥情人节快乐❤',
-    from: '@猿来如此',
-    to:   '~恋爱的人们',
-    wish: '情人节快乐！'
+    title: '❥520 快乐❤',
+    from: '~爱你的四月哥哥',
+    to:   '~我的钰儿',
+    wish: '520 快乐！'
 };
 
 var hashKey = {
@@ -107,9 +107,8 @@ $(function(){
             text:   '<div class="sectionIn">'+
                         '<p>献给<span id="hashTo"></span><br>' +
                             '<span id="hashWish"></span><br>' +
-                            '来自<a href="https://doupengs.github.io"><span id="hashFrom"></span></a> / 2017-02-14' +
+                            '来自<a href="https://doupengs.github.io"><span id="hashFrom"></span></a> / 2020-05-20' +
                         '</p>' +
-                        '<img src="valentineDay/qrcode.gif" width="220" height="220" class="qrcode" /> 扫码或微信长按二维码 <br> 一只会聊天的 小D机器狗 <br> 也是我的个人微信号 <br>' +
                         '<div class="license">' +
                             '后面还有哦 <br><br>' +
                             '▼' +
@@ -122,7 +121,7 @@ $(function(){
                         '<p>/ <a href="https://github.com/superwoods">超级木木</a> / Google doodle /</p>' +
                         '<div class="btn">' +
                             '<a href="https://github.com/doupengs">' +
-                            '访问 窦朋 的 GitHub 首页</a>' +
+                            '访问我的 GitHub 首页</a>' +
                         '</div>' +
                         '<div class="license">' +
                             '<a href="https://github.com/superwoods">'+
