@@ -118,12 +118,11 @@ $(function(){
             name:   'section5',
             text:   '<div class="sectionIn">'+
                         '<h2></h2>' +
-                        '<p>/ Google doodle /</p>' +
                         '<div class="license">' +
-                            '车马很慢<br>'+
-                            '书信很远<br>' +
-                            '一辈子只够做一件事<br>' +
-                            '一生只够爱一个人<br>' +
+                            '<p>车马很慢</p>'+
+                            '<p>书信很远</p>' +
+                            '<p>一辈子只够做一件事</p>' +
+                            '<p>一生只够爱一个人</p>' +
                             ''+
                             ''+
                         '</div>' +
